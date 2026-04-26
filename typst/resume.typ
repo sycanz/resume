@@ -24,7 +24,7 @@
     #term[July 2025 --- December 2025][On Site]
 
     - Architected and deployed a Breach and Attack Simulation (BAS) platform to facilitate collaborative Purple Team exercises, utilizing Terraform and Kubernetes (EKS) to build a scalable, automated environment for threat validation.
-    - Engineered an automated ETL pipeline using Python and GitLab CI to ingest diverse security telemetry into an AWS S3 data lake, centralizing critical data for enterprise-wide visibility.
+    - Engineered an automated ETL pipeline using Python and GitLab CI to ingest security telemetry into an AWS S3 data lake, centralizing critical data for enterprise-wide visibility.
     - Developed a centralized Vulnerability Management (VM) Governance dashboard, utilizing complex SQL to aggregate risk metrics and provide stakeholders with actionable insights into the organization's security posture.
     - Led the end-to-end evaluation and implementation of new security infrastructure, bridging the gap between Red and Blue teams by automating attack scenarios and defensive control testing.
   
@@ -39,28 +39,35 @@
 
     #text(weight: "bold")[=== Co-President] \
     #leadershipExperience[Hackerspace MMU][May 2025 --- Present] \
-    Achieved approx. 195 registrations, provision semesterly hackathon, setup venue every tuesday for Hackerspace session, introduce and encourage MMU students to join Hackerspace
+    Achieved approx. 195 registrations, provision semesterly hackathon, setup venue every tuesday for Hackerspace session, work on side-projects.
 
     #text(weight: "bold")[=== President] \
     #leadershipExperience[MMU Esports Club][April 2023 --- July 2025] \
-    MoU signing between MMU and UniPin, secured partnership with UniPin and CRIT Esports, resutrcutred organisation structure, organised university-level tournament, led 40 committee member, broadcasting team in MPLSG Season 9
+    MoU signing between MMU and UniPin, secured partnership with UniPin and CRIT Esports, restructured organisation, organised university-level tournament, led 40 committee members, broadcasting team in MPLSG Season 9
     #block(
       below: 2pt,
     )
+
+    == Languages
+    - Professional: English
+    - Conversational: Chinese, Malay
+    #block(
+      below: 5pt,
+    )
+
+    == Participations
+    San Diego CTF, Rentas CTF, SD CTF 2024, and L3akCTF 2024, Great Malaysia AI Hackathon by AWS
 
     == Technical Skills
     #block(
       spacing: 1pt,
     )[
       #badge-text("Language", "Python · Javascript · TypeScript · Bash")
-      #badge-text("AWS Services", "Lambda · ECS · CloudWatch · EC2 · S3 · VPC · IAM · EKS")
+      #badge-text("AWS", "Lambda · CloudWatch · EC2 · S3 · VPC · EKS")
       #badge-text("CI/CD", "GitHub Actions · GitLab CI/CD")
-      #badge-text("Tools", "Docker · Kubernetes (EKS/Minikube) · Terraform")
+      #badge-text("Tools", "Docker · Kubernetes · Terraform")
       #badge-text("Databases", "MySQL · PostgreSQL")
     ]\
-
-    == Participations
-    San Diego CTF, Rentas CTF, SD CTF 2024, and L3akCTF 2024, Great Malaysia AI Hackathon by AWS
 
     // == Award
     // #block(
@@ -91,7 +98,7 @@
       - Engineered a hardened CI/CD pipeline using GitHub Actions to enforce automated security gates, ensuring secured container images reach the staging environment
       - Developed an automated remediation service that identifies dependency vulnerabilities and programmatically generates MR to reduce manual security toil and MTTR
       - Implemented infrastructure-as-code (IaC) scanning to detect security misconfigurations in templates before provisioning, establishing proactive security posture
-      - Tech: GitHub Actions, Python, Docker, Trivy, Gitleaks, Terraform
+      - Tech: GH Actions, Python, Docker, Trivy, Gitleaks, Terraform
       - Skills: DevSecOps, Shift-Left Security, CI/CD Automation, Vulnerability Management, Python Development
     #block(
       below: 5pt,
@@ -107,20 +114,29 @@
       below: 5pt,
     )
 
-    === RatPack - Ready Assessment Test Platform
-      - Deployed application to Heroku production environment
-      - Managed domain acquisition, DNS config, URL routing
-      - Implemented Self-Service Password Reset (SSPR) with Mailgun integration
+    === Homelab
+      // - My workstation (linux mint) and server (debian) that runs multiple docker containers are interconnected and remotely accessible through tailscale ssh.
+      // - System and container are monitored through cAdvisor and node exporter with Grafana dashboard for resource management
+      // - Tech: cAdvisor, node exporter, prometheus, grafana, tailscale, docker
+      // - Skills: Linux, 
+      // - Architected and maintained a self-hosted environment using Docker to streamline the deployment and management of multiple containerized services on a Debian-based server.
+      // - Implemented a secure remote access solution via Tailscale SSH, enabling encrypted, low-latency connectivity between a Linux Mint workstation and backend infrastructure.
+      // - Developed a centralized observability stack utilizing Prometheus, cAdvisor, and Node Exporter to visualize system health and container performance metrics through custom Grafana dashboards.
+      - Orchestrated a containerized environment on Debian using Docker Compose to enforce IaC principles, ensuring repeatable deployment and management of services.
+      - Deployed a secure, encrypted remote-access layer via Tailscale SSH and a unified observability stack for real-time monitoring of system and container health.
+      - Tech: Docker (Compose), Tailscale, Prometheus, Grafana, cAdvisor, Node Exporter.
+      - Key: SysAdmin, Network Security, Observability & Monitoring, IaC, Linux.
+      // - Tech Stack: Docker, Tailscale, Prometheus, Grafana, cAdvisor, Node Exporter
+      // - Key Skills: SysAdmin, Network Security, Observability & Monitoring, IaaC principles, Linux.
+    
+    // === RatPack - Ready Assessment Test Platform
+    //   - Deployed application to Heroku production environment
+    //   - Managed domain acquisition, DNS config, URL routing
+    //   - Implemented Self-Service Password Reset (SSPR) with Mailgun integration
     #block(
       below: 5pt,
     )
 
-    == Languages
-    - Professional: English
-    - Conversational: Chinese, Malay
-    #block(
-      below: 5pt,
-    )
     == Referee
     Roy Chiu, Security Automation and Detection Team Manager \@ Grab
     #findMe((
