@@ -94,62 +94,25 @@
       below: 3pt,
     )
 
-    // === DevSecOps CI/CD Pipeline
-    //   - Built 5-stage GitHub Actions pipeline integrating Gitleaks, Semgrep SAST, and Trivy SCA; blocked non-compliant manifests pre-deployment using Kyverno CLI validation.
-    //   - Secured container builds with CycloneDX SBOM generation and Cosign cryptographic image signing.
-    //   - Centralized, deduplicated, and tracked vulnerabilities from all scans using a DefectDojo dashboard.
-    //   - Tech: GitHub Actions, Trivy, Semgrep, Gitleaks, Cosign, CycloneDX, OWASP ZAP, DefectDojo
-    // #block(
-    //   below: 5pt,
-    // )
-    // 
-    // === Cloud-Native Security on AWS EKS
-    //   - Provisioned private AWS EKS cluster using Terraform (VPC, IAM, ECR, KMS) with AWS SSM access, entirely eliminating public endpoints and bastion hosts.
-    //   - Enforced cluster Policy-as-Code via Kyverno (non-root, read-only rootfs, dropped capabilities, resource quotas).
-    //   - Deployed ArgoCD App-of-Apps GitOps workflow alongside Prometheus, Grafana, and Alertmanager stack.
-    //   - Tech: AWS EKS, Terraform, Kyverno, ArgoCD, Prometheus, Grafana, AWS SSM
-    // #block(
-    //   below: 5pt,
-    // )
-
-    === DevSecOps CI/CD Pipeline
-      - Built a 5-stage pipeline featuring Gitleaks secret detection, Semgrep SAST, and Trivy SCA; integrated Kyverno CLI to block non-compliant manifests pre-deployment.
-      - Secured container builds using CycloneDX SBOM generation and Cosign cryptographic image signing for end-to-end supply chain trust.
-      - Centralized vulnerability management via DefectDojo, aggregating and deduplicating SAST, SCA, container, and OWASP ZAP DAST scan results.
-      - Tech: GitHub Actions, Trivy, Semgrep, Gitleaks, Cosign, CycloneDX, OWASP ZAP, DefectDojo
-      // - Skills: DevSecOps, Shift-Left Security, CI/CD Automation, Supply Chain Security, Vulnerability Management
+    === Automated DevSecOps Pipeline
+      - Engineered a hardened CI/CD pipeline using GitHub Actions to enforce automated security gates, ensuring secured container images reach the staging environment
+      - Developed an automated remediation service that identifies dependency vulnerabilities and programmatically generates MR to reduce manual security toil and MTTR
+      - Implemented infrastructure-as-code (IaC) scanning to detect security misconfigurations in templates before provisioning, establishing proactive security posture
+      - Tech: GH Actions, Python, Docker, Trivy, Gitleaks, Terraform
+      - Skills: DevSecOps, Shift-Left Security, CI/CD Automation, Vulnerability Management, Python Development
     #block(
-      below: 3pt,
-    )
-    
-    === Cloud-Native Security on AWS EKS
-      - Provisioned an isolated, private AWS EKS cluster via Terraform (VPC, IAM, ECR, KMS) using AWS SSM Session Manager for secure administrative access—eliminating bastion hosts and public endpoints.
-      - Enforced cluster-wide Policy-as-Code by deploying Kyverno with 6 core policies targeting security hardening (non-root execution, dropped capabilities, read-only rootfs) and operational guardrails.
-      - Architected a continuous delivery workflow using the ArgoCD App-of-Apps pattern paired with a Prometheus, Grafana, and Alertmanager stack for cluster observability and real-time alerting.
-      - Tech: AWS EKS, Terraform, Kyverno, ArgoCD, Prometheus, Grafana, AWS SSM
-      // - Skills: Cloud Security, Policy-as-Code, GitOps, IaC, Cluster Observability
-    #block(
-      below: 3pt,
+      below: 5pt,
     )
 
-    // === DevSecOps CI/CD Pipeline
-    //   - Built a 5-stage CI pipeline (Gitleaks; SemGrep/SAST + Trivy/SCA; Build + Cosign Sign + SBOM; Deploy) with Kyverno CLI shift-left validation blocking non-compliant manifests pre-deployment
-    //   - Centralized vulnerability findings in DefectDojo, aggregating SAST, SCA, container image, and OWASP ZAP DAST results into a single source of truth with deduplication and trending
-    //   - Tech: GitHub Actions, Trivy, SemGrep, Gitleaks, Cosign, SBOM (CycloneDX), OWASP ZAP, DefectDojo
-    //   - Skills: DevSecOps, Shift-Left Security, CI/CD Automation, SAST/SCA/DAST, Vulnerability Management
-    // #block(
-    //   below: 5pt,
-    // )
-
-    // === Cloud-Native Security on AWS EKS
-    //   - Provisioned a private EKS cluster via Terraform (VPC, IAM, ECR, KMS) with SSM Session Manager access — no bastion hosts, no public endpoints
-    //   - Enforced Policy-as-Code with Kyverno across 6 ClusterPolicies (non-root, drop capabilities, read-only rootfs, privilege escalation, pod probes, resource quotas)
-    //   - Implemented GitOps via ArgoCD App-of-Apps pattern and deployed Prometheus/Grafana/Alertmanager for cluster-wide observability and alerting
-    //   - Tech: AWS EKS, Terraform, Kyverno, ArgoCD, Prometheus, Grafana, SSM
-    //   - Skills: Cloud Security, Policy-as-Code, GitOps, IaC, Observability & Monitoring
-    // #block(
-    //   below: 5pt,
-    // )
+    === Cloud-Native Security Governance & Observability
+      - Deployed a secure, scalable K8s cluster utilizing admission controllers to enforce Policy-as-Code/programmatically block non-compliant workload configurations
+      - Architected a centralized security observability layer by streaming audit logs into ELK/Prometheus stack, enabling real-time detection of API anomalies and forensic analysis
+      - Integrated HashiCorp Vault for dynamic secrets management, eliminating hardcoded credentials and streamlining secure access control across microservices
+      - Tech: AWS EKS, Kubernetes, Kyverno, HashiCorp Vault, Prometheus, Grafana, ELK Stack
+      - Skills: Cloud Security, Policy-as-Code, Observability, Secrets Management, Zero-Trust Architecture
+    #block(
+      below: 5pt,
+    )
 
     === Homelab
       // - My workstation (linux mint) and server (debian) that runs multiple docker containers are interconnected and remotely accessible through tailscale ssh.
@@ -171,7 +134,7 @@
     //   - Managed domain acquisition, DNS config, URL routing
     //   - Implemented Self-Service Password Reset (SSPR) with Mailgun integration
     #block(
-      below: 3pt,
+      below: 5pt,
     )
 
     == Referee
